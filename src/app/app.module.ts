@@ -11,6 +11,7 @@ import { DashboardModule } from './layouts/dashboard/dashboard.module';
 import { SearchComponent } from './layouts/search/search.component';
 import { DataserviceService } from './service/dataservice.service';
 import { HttpClientModule } from '@angular/common/http';
+import { OrderComponent } from './layouts/order/order.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     UserComponent,
     SearchComponent,
+    OrderComponent
     
     
   ],

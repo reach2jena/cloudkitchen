@@ -14,10 +14,14 @@
           <a routerLink="/order" routerLinkActive="active" ariaCurrentWhenActive="page">
             <mat-icon>add_shopping_cart</mat-icon> OrderMenu
           </a>
-          <a href=""><mat-icon>track_changes</mat-icon> Track Delivery</a>
-          <a href=""><mat-icon>folder_special</mat-icon> Today's special </a>
-          <a href=""><mat-icon>cancel</mat-icon>Cancel Order</a>
-          <a href=""><mat-icon>contact_support</mat-icon>Contacts </a>
+          <a routerLink="/trackorder" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <mat-icon>track_changes</mat-icon> Track Delivery</a>
+            <a routerLink="/special" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <mat-icon>folder_special</mat-icon> Today's special </a>
+            <a routerLink="/cancelorder" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <mat-icon>cancel</mat-icon>Cancel Order</a>
+            <a routerLink="/contacts" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <mat-icon>contact_support</mat-icon>Contacts </a>
           <a href=""><span class="material-icons">logout</span>logout </a>
 
         <li>

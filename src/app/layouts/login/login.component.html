@@ -6,14 +6,15 @@
     <h1>LOG IN</h1>
     <div class="textbox">
       <p>Login Name :</p>
-      <input placeholder="Username" [(ngModel)]="userName" name="userName" required>
+      <input placeholder="Username" [(ngModel)]="userName" name="userName" required >
     </div>
     <div class="textbox">
       <p>Password :</p>
-      <input placeholder="Password" [(ngModel)]="password" type="password" name="password" required>
+      <input placeholder="Password" [(ngModel)]="password" type="password" name="password" required >
 
     </div>
-   <div><button class="button" (click)="login()">Login</button> </div>
+   <div><button class="button" (click)="login()">Sign IN</button> </div>
+   <div><button class="signup" (click)="login()">Sign Up</button> </div>
        
       <div class="alert alert-danger alert-dismissible " *ngIf="iserror">
     
