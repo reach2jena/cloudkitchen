@@ -1,0 +1,95 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav opened  [opened]="isShowing">
+
+    
+    <div class="sidemenu">
+      <header>App option
+        <button mat-icon-button (click)="callMethods()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </header>
+
+      <ul>
+        <li>
+          <a href=""> <mat-icon>add_shopping_cart</mat-icon> OrderMenu</a>
+          <a href=""><mat-icon>track_changes</mat-icon> Track Delivery</a>
+          <a href=""><mat-icon>folder_special</mat-icon> Today's special </a>
+          <a href=""><mat-icon>cancel</mat-icon>Cancel Order</a>
+          <a href=""><mat-icon>contact_support</mat-icon>Contacts </a>
+          <a href=""><mat-icon class="mat-icon-rtl-mirror" svgIcon="thumb-up"></mat-icon>logout </a>
+
+        <li>
+      </ul>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" class="welcome-banner">
+      <button mat-icon-button (click)="callMethods()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <div class="welcome-banner"> Jena's cloud kitchen     
+      
+      <mat-icon>verified_user</mat-icon>
+      Owned by Rakesh Kumar Jena
+      
+    </div>
+    </mat-toolbar>
+    <div class="main-content">
+      <div>
+        <mat-grid-list cols="2" rowHeight="2:2">
+          <mat-grid-tile>1
+            <mat-card>
+              <mat-card-title>Macha Besara</mat-card-title>
+              <mat-card-content>
+                <p>
+                  Fresh Rohu Fish added with minimal spice and cinamon. Sauted with fresh tomato puree.
+                </p>
+                <img mat-card-image src="../../../assets/images/machabesara.jpg">
+              </mat-card-content>
+
+            </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card>
+              <mat-card-title>Chingudi sukhua</mat-card-title>
+              <mat-card-content>
+                <p>
+                  Desi odia cuisine dry fish with spice and cinamon. Sauted with fresh tomato puree.
+                </p>
+                <img mat-card-image src="../../../assets/images/chingudisukhua.jpg">
+              </mat-card-content>
+
+            </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card>
+              <mat-card-title>kankada Kasha</mat-card-title>
+              <mat-card-content>
+                <p>
+                  Chillika crab with desi home masala. Best goes with Steam rice.
+                </p>
+                <img mat-card-image src="../../../assets/images/kankada.jpg">
+              </mat-card-content>
+
+            </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card>
+              <mat-card-title>Khasi Kasha</mat-card-title>
+              <mat-card-content>
+                <p>
+                  Junglee Mutton roasted with Kachi Ghani Mustard Oil. It just melts in mouth..
+                </p>
+                <img mat-card-image src="../../../assets/images/mutton.jpg">
+              </mat-card-content>
+
+            </mat-card>
+          </mat-grid-tile>
+        </mat-grid-list>
+
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
