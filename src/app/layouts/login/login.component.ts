@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
-import {MatDialog} from '@angular/material/dialog';
+import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { User } from 'src/app/model/User';
+import { DataserviceService } from 'src/app/service/dataservice.service';
+
 
 
 @Component({
@@ -9,21 +12,33 @@ import {MatDialog} from '@angular/material/dialog';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  constructor(private router: Router) { }
+  constructor(private router: Router, private dataService: DataserviceService) { }
+  user: User = new User();
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+
   }
-  username: string| undefined;
-password: string | undefined;
+
+
+  userName!: string;
+  password !: string;
   showSpinner: string | undefined;
- 
-  login() : void {
-    if(this.username == 'admin' && this.password == 'admin')
-    {
-     this.router.navigate(["home"]);
-    }else {
-      alert("Invalid credentials");
-    }
- 
+
+  login(): void {
+    console.log(this.userName.toString);
+   // if (this.userName == 'admin' && this.password == 'admin') {
+      this.user.userName = this.userName;
+      this.user.password = this.password;
+      this.dataService.doLogin(this.user).subscribe(data => {
+
+        console.log(data);
+      }, error => alert("Login unsuccessful !!")
+      );
+
+      this.router.navigate(["home"]);
+  //  } 
+    //else {
+      //alert("Invalid credentials");
+    //}
+
   }
 }

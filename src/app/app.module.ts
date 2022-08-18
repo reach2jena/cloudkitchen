@@ -9,6 +9,8 @@ import { LoginComponent } from './layouts/login/login.component';
 import { UserComponent } from './layouts/user/user.component';
 import { DashboardModule } from './layouts/dashboard/dashboard.module';
 import { SearchComponent } from './layouts/search/search.component';
+import { DataserviceService } from './service/dataservice.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -28,9 +30,10 @@ import { SearchComponent } from './layouts/search/search.component';
     CustomMaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    DashboardModule
+    DashboardModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
