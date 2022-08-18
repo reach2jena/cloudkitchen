@@ -64,7 +64,7 @@ ul li:hover a{
   line-height: 40px;
   color: aliceblue;
   font-size: 22px;  
-  text-align: center;
+
   letter-spacing: 2px;
   line-height: 65px;
   user-select: none;
@@ -72,7 +72,7 @@ ul li:hover a{
 
 .lastportion-banner{
   background-color: #063146;
-  line-height: 40px;
+  line-height: 30px;
   color: aliceblue;
   font-size: 22px;  
   text-align: center;
@@ -81,8 +81,28 @@ ul li:hover a{
   user-select: none;
 }
 .image{
-  width: 60%;
+  width: 50%;
   height: 50%;
   box-sizing: border-box;
 border-top: 1px solid rgb(255,255,255,0.1);
+}
+
+.form-control {
+  border-radius: 3px;
+  width: 600px;
+  margin-left: 20px;
+}
+
+.search-icon {
+  position: absolute;
+  z-index: 10;
+  right: 59%;
+  top: 20px;
+  color: blue;
+}
+
+.textcorner{
+ border: #fff;
+  text-align: right;
+  right: 0;
 }

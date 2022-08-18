@@ -33,22 +33,74 @@
       <button mat-icon-button (click)="callMethods()">
         <mat-icon>menu</mat-icon>
       </button>
-      <div class="welcome-banner"> Jena's cloud kitchen     
-      
-      <mat-icon>verified_user</mat-icon>
-      Owned by Rakesh Kumar Jena
-      
+      <div class="welcome-banner  navbar-dark shadow-sm"> Jena's cloud kitchen     
+           
     </div>
+    <div> <mat-icon >account_circle</mat-icon>
+      Welcome {{name}}  <mat-icon>add_shopping_cart</mat-icon>
+    </div>
+    
     </mat-toolbar>
     <div class="main-content">
       <div>
+        <mat-grid-list cols="4" rowHeight="320px">
+          <mat-grid-tile>
+            <mat-card>
+             
+              <mat-card-content class="image">
+                <p>
+                Paneer Malai Kofta!
+                </p>
+                <img mat-card-image src="../../../assets/images/mkokfta.jpg" >
+              </mat-card-content>
+
+            </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card>
+            
+              <mat-card-content class="image">
+                <p>
+                Paratha !!
+                </p>
+                <img mat-card-image src="../../../assets/images/paratha.jfif" >
+              </mat-card-content>
+
+            </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card>
+             
+              <mat-card-content class="image">
+                <p>
+                  Mushroom Curry
+                </p>
+                <img mat-card-image src="../../../assets/images/Mushroom.jpeg">
+              </mat-card-content>
+
+            </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card>
+              <mat-card-title>Rasogola </mat-card-title>
+              <mat-card-content class="image">
+                <p>
+                  It just melts in mouth..
+                </p>
+                <img mat-card-image src="../../../assets/images/rasgulla.jpeg">
+              </mat-card-content>
+
+            </mat-card>
+          </mat-grid-tile>
+        </mat-grid-list>
+
         <mat-grid-list cols="4" rowHeight="290px">
           <mat-grid-tile>
             <mat-card>
               <mat-card-title>Mustard Fish Curry</mat-card-title>
               <mat-card-content class="image">
                 <p>
-                  Fresh Rohu Fish added with minimal spice and cinamon. Sauted with fresh tomato puree.
+                  Fresh Rohu Fish curry!
                 </p>
                 <img mat-card-image src="../../../assets/images/machabesara.jpg" >
               </mat-card-content>
@@ -60,9 +112,60 @@
               <mat-card-title>Prawn curry</mat-card-title>
               <mat-card-content class="image">
                 <p>
-                  Desi odia cuisine dry fish with spice and cinamon. Sauted with fresh tomato puree.
+                  Desi odia cuisine dry fish with spice and cinamon.
                 </p>
                 <img mat-card-image src="../../../assets/images/chingudisukhua.jpg">
+              </mat-card-content>
+
+            </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card>
+              <mat-card-title>Dosa</mat-card-title>
+              <mat-card-content class="image">
+                <p>
+                 Masala Dosa with Chutney!
+                </p>
+                <img mat-card-image src="../../../assets/images/dosa">
+              </mat-card-content>
+
+            </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card>
+              <mat-card-title>IDLI Bada Sambhar</mat-card-title>
+              <mat-card-content class="image">
+                <p>
+                  Hot Idli with Vada
+                </p>
+                <img mat-card-image src="../../../assets/images/idlivada">
+              </mat-card-content>
+
+            </mat-card>
+          </mat-grid-tile>
+        </mat-grid-list>
+
+        <mat-grid-list cols="4" rowHeight="290px">
+          <mat-grid-tile>
+            <mat-card>
+              <mat-card-title>Biryani</mat-card-title>
+              <mat-card-content class="image">
+                <p>
+                  Lamb Biryani
+                </p>
+                <img mat-card-image src="../../../assets/images/biryani" >
+              </mat-card-content>
+
+            </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card>
+              <mat-card-title>Dahi Bada</mat-card-title>
+              <mat-card-content class="image">
+                <p>
+                  Dahi Bhala
+                </p>
+                <img mat-card-image src="../../../assets/images/dahibara">
               </mat-card-content>
 
             </mat-card>
@@ -84,7 +187,7 @@
               <mat-card-title>Mutton Kasha</mat-card-title>
               <mat-card-content class="image">
                 <p>
-                  Junglee Mutton roasted with Kachi Ghani Mustard Oil. It just melts in mouth..
+                  Junglee Mutton roasted. It just melts in mouth..
                 </p>
                 <img mat-card-image src="../../../assets/images/mutton.jpg">
               </mat-card-content>
@@ -92,59 +195,10 @@
             </mat-card>
           </mat-grid-tile>
         </mat-grid-list>
-
-        <mat-grid-list cols="4" rowHeight="290px">
-          <mat-grid-tile>
-            <mat-card>
-              <mat-card-title>Mustard Fish Curry</mat-card-title>
-              <mat-card-content class="image">
-                <p>
-                  Fresh Rohu Fish added with minimal spice and cinamon. Sauted with fresh tomato puree.
-                </p>
-                <img mat-card-image src="../../../assets/images/machabesara.jpg" >
-              </mat-card-content>
-
-            </mat-card>
-          </mat-grid-tile>
-          <mat-grid-tile>
-            <mat-card>
-              <mat-card-title>Prawn curry</mat-card-title>
-              <mat-card-content class="image">
-                <p>
-                  Desi odia cuisine dry fish with spice and cinamon. Sauted with fresh tomato puree.
-                </p>
-                <img mat-card-image src="../../../assets/images/chingudisukhua.jpg">
-              </mat-card-content>
-
-            </mat-card>
-          </mat-grid-tile>
-          <mat-grid-tile>
-            <mat-card>
-              <mat-card-title>Crab Curry</mat-card-title>
-              <mat-card-content class="image">
-                <p>
-                  Crab Curry Best goes with Steam rice.
-                </p>
-                <img mat-card-image src="../../../assets/images/kankada.jpg">
-              </mat-card-content>
-
-            </mat-card>
-          </mat-grid-tile>
-          <mat-grid-tile>
-            <mat-card>
-              <mat-card-title>Mutton Kasha</mat-card-title>
-              <mat-card-content class="image">
-                <p>
-                  Junglee Mutton roasted with Kachi Ghani Mustard Oil. It just melts in mouth..
-                </p>
-                <img mat-card-image src="../../../assets/images/mutton.jpg">
-              </mat-card-content>
-
-            </mat-card>
-          </mat-grid-tile>
-        </mat-grid-list>
-
-
+        
+      </div>
+      <div>
+ 
       </div>
       <router-outlet></router-outlet>
     </div>

@@ -5,6 +5,7 @@ import { LoginComponent } from './layouts/login/login.component';
 import { UserComponent } from './layouts/user/user.component';
 import { DashboardComponent } from './layouts/dashboard/dashboard.component';
 import { OrderComponent } from './layouts/order/order.component';
+import { SearchComponent } from './layouts/search/search.component';
 
 const routes: Routes = [
   { path: '',   redirectTo: 'login', pathMatch: 'full' },
@@ -12,7 +13,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'home', component: DashboardComponent },
   { path: 'order', component: OrderComponent },
-  { path: 'trackorder', component: OrderComponent },
+  { path: 'trackorder', component: SearchComponent },
   { path: 'special', component: OrderComponent },
   { path: 'cancelorder', component: OrderComponent },
   {path : '', component : LoginComponent}
