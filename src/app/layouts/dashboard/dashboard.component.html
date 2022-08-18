@@ -1,7 +1,7 @@
 <mat-sidenav-container>
-  <mat-sidenav #sidenav opened  [opened]="isShowing">
+  <mat-sidenav #sidenav opened [opened]="isShowing">
 
-    
+
     <div class="sidemenu">
       <header>App option
         <button mat-icon-button (click)="callMethods()">
@@ -15,13 +15,17 @@
             <mat-icon>add_shopping_cart</mat-icon> OrderMenu
           </a>
           <a routerLink="/trackorder" routerLinkActive="active" ariaCurrentWhenActive="page">
-            <mat-icon>track_changes</mat-icon> Track Delivery</a>
-            <a routerLink="/special" routerLinkActive="active" ariaCurrentWhenActive="page">
-            <mat-icon>folder_special</mat-icon> Today's special </a>
-            <a routerLink="/cancelorder" routerLinkActive="active" ariaCurrentWhenActive="page">
-            <mat-icon>cancel</mat-icon>Cancel Order</a>
-            <a routerLink="/contacts" routerLinkActive="active" ariaCurrentWhenActive="page">
-            <mat-icon>contact_support</mat-icon>Contacts </a>
+            <mat-icon>track_changes</mat-icon> Track Delivery
+          </a>
+          <a routerLink="/special" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <mat-icon>folder_special</mat-icon> Today's special
+          </a>
+          <a routerLink="/cancelorder" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <mat-icon>cancel</mat-icon>Cancel Order
+          </a>
+          <a routerLink="/contacts" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <mat-icon>contact_support</mat-icon>Contacts
+          </a>
           <a href=""><span class="material-icons">logout</span>logout </a>
 
         <li>
@@ -33,49 +37,50 @@
       <button mat-icon-button (click)="callMethods()">
         <mat-icon>menu</mat-icon>
       </button>
-      <div class="welcome-banner  navbar-dark shadow-sm"> Jena's cloud kitchen     
-           
-    </div>
-    <div> <mat-icon >account_circle</mat-icon>
-      Welcome {{name}}  <mat-icon>add_shopping_cart</mat-icon>
-    </div>
-    
+      <div class="welcome-banner  navbar-dark shadow-sm"> Jena's cloud kitchen
+
+      </div>
+      <div>
+        <mat-icon>account_circle</mat-icon>
+        Welcome {{name}} <mat-icon>add_shopping_cart</mat-icon>
+      </div>
+
     </mat-toolbar>
     <div class="main-content">
       <div>
         <mat-grid-list cols="4" rowHeight="320px">
           <mat-grid-tile>
             <mat-card>
-             
+
               <mat-card-content class="image">
                 <p>
-                Paneer Malai Kofta!
+                  Paneer Malai Kofta!
                 </p>
-                <img mat-card-image src="../../../assets/images/mkokfta.jpg" >
+                <img mat-card-image src="../../../assets/images/mkokfta.jpg">
               </mat-card-content>
 
             </mat-card>
           </mat-grid-tile>
           <mat-grid-tile>
             <mat-card>
-            
+
               <mat-card-content class="image">
                 <p>
-                Paratha !!
+                  Paratha !!
                 </p>
-                <img mat-card-image src="../../../assets/images/paratha.jfif" >
+                <img mat-card-image src="../../../assets/images/paratha.jfif">
               </mat-card-content>
 
             </mat-card>
           </mat-grid-tile>
           <mat-grid-tile>
             <mat-card>
-             
+
               <mat-card-content class="image">
                 <p>
-                  Mushroom Curry
+                  Daal Makhni..
                 </p>
-                <img mat-card-image src="../../../assets/images/Mushroom.jpeg">
+                <img mat-card-image src="../../../assets/images/dalmakhi">
               </mat-card-content>
 
             </mat-card>
@@ -96,35 +101,40 @@
 
         <mat-grid-list cols="4" rowHeight="290px">
           <mat-grid-tile>
+
+
             <mat-card>
-              <mat-card-title>Mustard Fish Curry</mat-card-title>
+              <mat-card-title>Biryani</mat-card-title>
               <mat-card-content class="image">
                 <p>
-                  Fresh Rohu Fish curry!
+                  Lamb Biryani
                 </p>
-                <img mat-card-image src="../../../assets/images/machabesara.jpg" >
+                <img mat-card-image src="../../../assets/images/biryani">
               </mat-card-content>
 
             </mat-card>
+
           </mat-grid-tile>
           <mat-grid-tile>
+
             <mat-card>
-              <mat-card-title>Prawn curry</mat-card-title>
+              
               <mat-card-content class="image">
                 <p>
-                  Desi odia cuisine dry fish with spice and cinamon.
+                  Dahi Bhala
                 </p>
-                <img mat-card-image src="../../../assets/images/chingudisukhua.jpg">
+                <img mat-card-image src="../../../assets/images/dahibara">
               </mat-card-content>
 
             </mat-card>
+
           </mat-grid-tile>
           <mat-grid-tile>
             <mat-card>
               <mat-card-title>Dosa</mat-card-title>
               <mat-card-content class="image">
                 <p>
-                 Masala Dosa with Chutney!
+                  Masala Dosa with Chutney!
                 </p>
                 <img mat-card-image src="../../../assets/images/dosa">
               </mat-card-content>
@@ -148,24 +158,24 @@
         <mat-grid-list cols="4" rowHeight="290px">
           <mat-grid-tile>
             <mat-card>
-              <mat-card-title>Biryani</mat-card-title>
+              <mat-card-title>Mustard Fish Curry</mat-card-title>
               <mat-card-content class="image">
                 <p>
-                  Lamb Biryani
+                  Fresh Rohu Fish curry!
                 </p>
-                <img mat-card-image src="../../../assets/images/biryani" >
+                <img mat-card-image src="../../../assets/images/machabesara.jpg">
               </mat-card-content>
 
             </mat-card>
           </mat-grid-tile>
           <mat-grid-tile>
             <mat-card>
-              <mat-card-title>Dahi Bada</mat-card-title>
+              <mat-card-title>Prawn curry</mat-card-title>
               <mat-card-content class="image">
                 <p>
-                  Dahi Bhala
+                  Desi odia cuisine dry fish with spice and cinamon.
                 </p>
-                <img mat-card-image src="../../../assets/images/dahibara">
+                <img mat-card-image src="../../../assets/images/chingudisukhua.jpg">
               </mat-card-content>
 
             </mat-card>
@@ -195,10 +205,10 @@
             </mat-card>
           </mat-grid-tile>
         </mat-grid-list>
-        
+
       </div>
       <div>
- 
+
       </div>
       <router-outlet></router-outlet>
     </div>
