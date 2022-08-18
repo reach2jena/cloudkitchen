@@ -18,7 +18,8 @@ export class LoginComponent implements OnInit {
 
   }
 
-
+  iserror:boolean =false;
+  errorMessage!: string;
   userName!: string;
   password !: string;
   showSpinner: string | undefined;
@@ -31,10 +32,15 @@ export class LoginComponent implements OnInit {
       this.dataService.doLogin(this.user).subscribe(data => {
 
         console.log(data);
-      }, error => alert("Login unsuccessful !!")
+        this.router.navigate(["home"]);
+      }, error =>
+      {
+        this.iserror=true;
+        this.errorMessage="Invalid Credentials!";
+      } 
       );
 
-      this.router.navigate(["home"]);
+     
   //  } 
     //else {
       //alert("Invalid credentials");

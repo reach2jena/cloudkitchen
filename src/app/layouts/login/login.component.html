@@ -1,5 +1,5 @@
 <mat-toolbar>
-
+  
 </mat-toolbar>
 <mat-card class="bg-img">
   <div class="center_login">
@@ -13,11 +13,14 @@
       <input placeholder="Password" [(ngModel)]="password" type="password" name="password" required>
 
     </div>
-   
-      <button class="button" (click)="login()">Login</button>
-   
+   <div><button class="button" (click)="login()">Login</button> </div>
+       
+      <div class="alert alert-danger alert-dismissible " *ngIf="iserror">
+    
+        <strong> {{errorMessage}}</strong>
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      </div> 
   </div>
-
-
+  
 
 </mat-card>
