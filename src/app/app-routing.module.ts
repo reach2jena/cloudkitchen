@@ -6,6 +6,7 @@ import { UserComponent } from './layouts/user/user.component';
 import { DashboardComponent } from './layouts/dashboard/dashboard.component';
 import { OrderComponent } from './layouts/order/order.component';
 import { SearchComponent } from './layouts/search/search.component';
+import { DesignerComponent } from './designer/designer.component';
 
 const routes: Routes = [
   { path: '',   redirectTo: 'login', pathMatch: 'full' },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'trackorder', component: SearchComponent },
   { path: 'special', component: OrderComponent },
   { path: 'cancelorder', component: OrderComponent },
+  { path: 'author', component: DesignerComponent},
   {path : '', component : LoginComponent}
 
 ];

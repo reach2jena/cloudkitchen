@@ -13,6 +13,7 @@ import { DataserviceService } from './service/dataservice.service';
 import { HttpClientModule } from '@angular/common/http';
 import { OrderComponent } from './layouts/order/order.component';
 import { NgToastModule } from 'ng-angular-popup';
+import { DesignerComponent } from './designer/designer.component';
 
 
 
@@ -22,7 +23,8 @@ import { NgToastModule } from 'ng-angular-popup';
     LoginComponent,
     UserComponent,
     SearchComponent,
-    OrderComponent
+    OrderComponent,
+    DesignerComponent
     
     
   ],
