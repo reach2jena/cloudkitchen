@@ -12,6 +12,7 @@ import { SearchComponent } from './layouts/search/search.component';
 import { DataserviceService } from './service/dataservice.service';
 import { HttpClientModule } from '@angular/common/http';
 import { OrderComponent } from './layouts/order/order.component';
+import { NgToastModule } from 'ng-angular-popup';
 
 
 
@@ -26,15 +27,17 @@ import { OrderComponent } from './layouts/order/order.component';
     
   ],
   imports: [
-    BrowserModule,
+    NgToastModule,
+    BrowserModule,    
     AppRoutingModule,
     CustomMaterialModule,
     BrowserAnimationsModule,
-    CustomMaterialModule,
-    FormsModule,
-    ReactiveFormsModule,
+    CustomMaterialModule,      
     DashboardModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule    
+  
   ],
   providers: [DataserviceService],
   bootstrap: [AppComponent]

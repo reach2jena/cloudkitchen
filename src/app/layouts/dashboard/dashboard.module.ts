@@ -6,6 +6,8 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { CustomMaterialModule } from 'src/app/core/custom-module/custom-module.module';
+import { NgToastModule } from 'ng-angular-popup';
+import { Router } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { CustomMaterialModule } from 'src/app/core/custom-module/custom-module.m
     CustomMaterialModule,
     CommonModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgToastModule
+    
   
   ]
   
